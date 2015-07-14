@@ -36,6 +36,11 @@ module VagrantPlugins
         Cap::MountNFS
       end
 
+      guest_capability("smartos", "mount_virtualbox_shared_folder") do
+        require_relative "cap/mount_virtualbox_shared_folder"
+        Cap::MountVirtualBoxSharedFolder
+      end
+
       guest_capability("smartos", "rsync_installed") do
         require_relative "cap/rsync"
         Cap::RSync
