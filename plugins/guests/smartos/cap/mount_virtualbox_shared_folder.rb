@@ -6,7 +6,7 @@
 # by Braxton Huggins <braxton@delorum.com>
 
 module VagrantPlugins
-  module GuestSmartOS
+  module GuestSmartos
     module Cap
       class MountVirtualBoxSharedFolder
         def self.mount_virtualbox_shared_folder(machine, name, guestpath, options)
